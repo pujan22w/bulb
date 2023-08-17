@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<body>
+    <style>
+        .border{
+            border:2px solid black;
+            border-radius:10vw;
+            width:20vw;
+            height:20vw;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+        button{
+            margin-top: 2rem;
+            margin-left:3rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn1,.btn2{
+            border:1px solid black;
+            border-radius:1.5vw;
+            padding: 1.5vw;
+            cursor:pointer;
+        }
+        .line{
+            border-left:1px solid black;
+            height:50vw;
+        }
+    </style>
+    <div class="border">
+
+    </div>
+    <button class="btn1">
+        ON
+    </button>
+    <button class="btn2">OFF</button>
+    <div class="line"></div>
+    
+</body>
+<script>
+    var re= document.querySelector(".btn1");
+    var bor=document.querySelector(".border");
+    var re2=document.querySelector(".btn2");
+    re.addEventListener("click", function(){
+        bor.style.backgroundColor= "yellow";
+    });
+    re2.addEventListener("click",function hi(){
+        bor.style.backgroundColor="transparent";
+    })
+
+</script>
+</html>
